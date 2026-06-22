@@ -553,7 +553,7 @@ export const EduSmartProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     aiProvider: 'gemini',
     geminiKey: '',
     openaiKey: '',
-    openaiBaseUrl: 'https://www.cocolink.ai/',
+    openaiBaseUrl: 'https://www.cocolink.ai/v1',
     openaiModel: 'gpt-3.5-turbo'
   });
   const [virtualClasses, setVirtualClasses] = useState<VirtualClass[]>(DEFAULT_VIRTUAL_CLASSES);
@@ -936,7 +936,7 @@ export const EduSmartProvider: React.FC<{ children: React.ReactNode }> = ({ chil
             aiProvider: userToSet.openaiKey ? 'openai' : 'gemini',
             geminiKey: userToSet.geminiKey || '',
             openaiKey: userToSet.openaiKey || '',
-            openaiBaseUrl: userToSet.openaiBaseUrl || 'https://www.cocolink.ai/',
+            openaiBaseUrl: userToSet.openaiBaseUrl || 'https://www.cocolink.ai/v1',
             openaiModel: userToSet.openaiModel || 'gpt-3.5-turbo'
           });
         }
@@ -1122,7 +1122,7 @@ export const EduSmartProvider: React.FC<{ children: React.ReactNode }> = ({ chil
             aiProvider: teacherUser.aiProvider || (teacherUser.openaiKey ? 'openai' : 'gemini'),
             geminiKey: teacherUser.geminiKey || '',
             openaiKey: teacherUser.openaiKey || '',
-            openaiBaseUrl: teacherUser.openaiBaseUrl || 'https://www.cocolink.ai/',
+            openaiBaseUrl: teacherUser.openaiBaseUrl || 'https://www.cocolink.ai/v1',
             openaiModel: teacherUser.openaiModel || 'gpt-3.5-turbo'
           });
         }
@@ -2398,7 +2398,7 @@ export const EduSmartProvider: React.FC<{ children: React.ReactNode }> = ({ chil
           aiProvider: foundUser.aiProvider || (foundUser.openaiKey ? 'openai' : 'gemini'),
           geminiKey: foundUser.geminiKey || '',
           openaiKey: foundUser.openaiKey || '',
-          openaiBaseUrl: foundUser.openaiBaseUrl || 'https://www.cocolink.ai/',
+          openaiBaseUrl: foundUser.openaiBaseUrl || 'https://www.cocolink.ai/v1',
           openaiModel: foundUser.openaiModel || 'gpt-3.5-turbo'
         });
       }
