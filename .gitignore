@@ -36,6 +36,18 @@ yarn-error.log*
 # vercel
 .vercel
 
+# Custom ignored directories
+Ban cu/
+New/
+fuji/
+scratch/
+
+# Test files
+test*.js
+test.js
+refactor_store.js
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
